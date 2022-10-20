@@ -1,15 +1,15 @@
-import Prerenderer from '@prerenderer/prerenderer';
-import PuppeteerRenderer from '@prerenderer/renderer-puppeteer';
-import path from 'path';
-import mkdirp from 'mkdirp';
-import fs from 'fs';
-import spin from 'io-spin';
+import Prerenderer from "@prerenderer/prerenderer";
+import PuppeteerRenderer from "@prerenderer/renderer-puppeteer";
+import path from "path";
+import mkdirp from "mkdirp";
+import fs from "fs";
+import spin from "io-spin";
 
 /*
  * @Author: shaolong
  * @Date: 2022-10-20 13:44:14
  * @LastEditors: shaolong
- * @LastEditTime: 2022-10-20 15:27:12
+ * @LastEditTime: 2022-10-20 16:39:31
  * @Description:
  */
 

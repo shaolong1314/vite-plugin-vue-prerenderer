@@ -2,7 +2,8 @@
   "name": "vite-plugin-vue-prerenderer",
   "version": "1.0.0",
   "description": "Prerender plugin for vite",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/shaolong1314/sl-vue-router.git"
+    "url": "https://github.com/shaolong1314/vite-plugin-vue-prerenderer.git"
   },
   "author": "shaolong_zheng",
   "license": "MIT",

@@ -2,7 +2,7 @@
  * @Author: shaolong
  * @Date: 2022-10-20 16:06:09
  * @LastEditors: shaolong
- * @LastEditTime: 2022-10-20 16:23:25
+ * @LastEditTime: 2022-10-21 15:59:53
  * @Description:
 -->
 
@@ -45,6 +45,19 @@ export default defineConfig({
     vitePluginVuePrerenderer(config),
   ],
 });
+```
+
+### 如何处理节点不需要预渲染
+
+---
+
+页面中使用
+
+```
+if(!window['__PRERENDER_INJECTED__']) {
+ // 不需要预渲染
+ do something
+}
 ```
 
 ### Config

@@ -9,7 +9,7 @@ import spin from "io-spin";
  * @Author: shaolong
  * @Date: 2022-10-20 13:44:14
  * @LastEditors: shaolong
- * @LastEditTime: 2022-10-20 16:39:31
+ * @LastEditTime: 2022-10-21 15:50:07
  * @Description:
  */
 
@@ -44,7 +44,15 @@ function vitePluginVuePrerenderer(...args) {
         // Required - The path to the app to prerender. Should have an index.html and any other needed assets.
         staticDir: _options.staticDir,
         // The plugin that actually renders the page.
-        renderer: new PuppeteerRenderer({ renderAfterTime: 5000 }),
+        renderer: new PuppeteerRenderer({
+          // 属性名
+          injectProperty: "__PRERENDER_INJECTED__",
+          // 属性值
+          inject: {
+            isPrerender: true,
+          },
+          renderAfterTime: 5000,
+        }),
       });
       prerenderer
         .initialize()
